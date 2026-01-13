@@ -48,7 +48,7 @@ const BookingSection = () => {
             Book <span className="text-gradient">Alijoma</span>
           </h2>
           <p className="text-muted-foreground">
-            For events, shows, collaborations, and performances
+            Ready to bring Alijoma's electrifying energy to your event? Let's make magic happen!
           </p>
         </motion.div>
 
@@ -62,8 +62,8 @@ const BookingSection = () => {
             <div>
               <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground">
-                Whether you want to book Alijoma for a concert, collaborate on a project, 
-                or discuss business opportunities, we'd love to hear from you.
+                Dreaming of an unforgettable concert? Craving a killer collaboration? Or exploring exciting business ventures?
+                Alijoma is all ears and ready to turn your vision into reality!
               </p>
             </div>
             <div className="space-y-4">

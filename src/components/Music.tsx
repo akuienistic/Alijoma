@@ -22,7 +22,7 @@ const Music = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Popular <span className="text-gradient">Tracks</span>
           </h2>
-          <p className="text-muted-foreground">Listen to Alijoma's most loved songs</p>
+          <p className="text-muted-foreground">Dive into Alijoma's chart-topping hits that are conquering hearts worldwide!</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">

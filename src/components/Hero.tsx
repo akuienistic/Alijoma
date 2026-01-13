@@ -29,7 +29,7 @@ const Hero = () => {
             <span className="text-gradient">ALIJOMA</span>
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-            Afrobeat • Reggae • Dancehall — Blending African rhythms with heartfelt melodies from Bor, South Sudan to the world.
+            Ignite your soul with electrifying Afrobeat grooves, laid-back Reggae vibes, and infectious Dancehall beats! Alijoma brings the vibrant sounds of South Sudan straight to your heart.
           </p>
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <Button size="lg" className="gap-2" onClick={() => scrollToSection("music")}>
