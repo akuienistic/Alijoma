@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Play, Music } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Badge } from "@/components/ui/badge";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -14,22 +15,34 @@ const Hero = () => {
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-16 overflow-hidden">
       <div className="absolute inset-0 hero-gradient" />
       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent" />
-      
-      <div className="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+      <div className="container mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-center lg:text-left"
         >
-          <p className="text-primary font-medium mb-4 tracking-widest uppercase">
-            South Sudanese Recording Artist
-          </p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
             <span className="text-gradient">ALIJOMA</span>
           </h1>
+          <div className="mb-6 flex flex-wrap gap-2 justify-center lg:justify-start">
+            <Badge variant="secondary" className="text-primary font-medium tracking-widest uppercase px-4 py-1">
+              South Sudanese Recording Artist
+            </Badge>
+            <Badge variant="outline" className="px-3 py-1">
+              Afrobeat
+            </Badge>
+            <Badge variant="outline" className="px-3 py-1">
+              Reggae
+            </Badge>
+            <Badge variant="outline" className="px-3 py-1">
+              Dancehall
+            </Badge>
+          </div>
           <p className="text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-            Ignite your soul with electrifying Afrobeat grooves, laid-back Reggae vibes, and infectious Dancehall beats! Alijoma brings the vibrant sounds of South Sudan straight to your heart.
+            Ignite your soul with electrifying Afrobeat grooves, laid-back Reggae vibes, and infectious Dancehall beats!
+            Alijoma brings the vibrant sounds of South Sudan straight to your heart.
           </p>
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <Button size="lg" className="gap-2" onClick={() => scrollToSection("music")}>

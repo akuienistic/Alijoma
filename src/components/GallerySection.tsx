@@ -46,6 +46,17 @@ const GallerySection = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-8"
+        >
+          <p className="text-muted-foreground italic text-lg">
+            "Every photo captures a vibe, every moment tells a tale – explore Alijoma's world through these lenses!"
+          </p>
+        </motion.div>
       </div>
     </section>
   );

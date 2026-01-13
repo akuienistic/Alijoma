@@ -59,6 +59,34 @@ const Music = () => {
           ))}
         </div>
 
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-8"
+        >
+          <p className="text-muted-foreground italic text-lg">
+            "Feel the rhythm, embrace the beat – Alijoma's music speaks to your soul!"
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-12 flex justify-center"
+        >
+          <iframe
+            src="https://open.spotify.com/embed/artist/47zTPaJQpQls7xws7u4sTU?utm_source=generator"
+            width="100%"
+            height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+            className="max-w-md rounded-xl"
+          ></iframe>
+        </motion.div>
+
         <div className="flex justify-center gap-4">
           <a href="https://open.spotify.com/artist/47zTPaJQpQls7xws7u4sTU" target="_blank" rel="noopener noreferrer">
             <Button variant="outline" className="gap-2">

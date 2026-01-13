@@ -98,32 +98,39 @@ const Footer = () => {
           {/* Connect */}
           <div>
             <h4 className="font-bold mb-4">Connect</h4>
-            <ul className="space-y-3 text-sm text-muted-foreground">
-              <li>
-                <span className="font-medium text-foreground">For Bookings:</span>
-                <br />contact@alijoma.com
-              </li>
-              <li>
-                <span className="font-medium text-foreground">Location:</span>
-                <br />Bor, South Sudan
-              </li>
-              <li>
-                <span className="font-medium text-foreground">Management:</span>
-                <br />Alijoma Official Team
-              </li>
-            </ul>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center gap-3">
+                {socialLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <a
+                      key={link.label}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
+                      aria-label={link.label}
+                    >
+                      <Icon size={18} />
+                    </a>
+                  );
+                })}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Follow Alijoma on social media for the latest updates and behind-the-scenes content.
+              </p>
+            </div>
           </div>
         </div>
 
         <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
-          <p className="mb-2">© {new Date().getFullYear()} Alijoma. All rights reserved.</p>
           <p>
-            Designed & Built by{" "}
+            © {new Date().getFullYear()} Alijoma. All rights reserved. • Designed & Built by{" "}
             <a
               href="https://web.facebook.com/profile.php?id=61572703111798"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-primary hover:underline"
+              className="text-primary"
             >
               Simon Star Tech
             </a>

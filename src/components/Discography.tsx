@@ -78,6 +78,17 @@ const Discography = () => {
             </motion.div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mt-8"
+        >
+          <p className="text-muted-foreground italic text-lg">
+            "Each album tells a story, each track captures a moment – dive into Alijoma's musical journey!"
+          </p>
+        </motion.div>
       </div>
     </section>
   );

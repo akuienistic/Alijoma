@@ -21,7 +21,7 @@ const BookingSection = () => {
     const emailBody = encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:contact@alijoma.com?subject=${emailSubject}&body=${emailBody}`;
+    window.location.href = `mailto:symonstartech@gmail.com?subject=${emailSubject}&body=${emailBody}`;
     toast({
       title: "Opening email client...",
       description: "Your booking request is being prepared.",
@@ -32,7 +32,7 @@ const BookingSection = () => {
     const message = encodeURIComponent(
       `*Booking Request*\n\nName: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
     );
-    window.open(`https://wa.me/211?text=${message}`, "_blank");
+    window.open(`https://wa.me/251988499136?text=${message}`, "_blank");
   };
 
   return (
