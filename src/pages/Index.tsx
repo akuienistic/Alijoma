@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import About from "@/components/About";
+import SongRelease from "@/components/SongRelease";
 import Music from "@/components/Music";
 import Videos from "@/components/Videos";
 import Discography from "@/components/Discography";
@@ -23,6 +24,7 @@ const Index = () => {
       <section id="about">
         <About />
       </section>
+      <SongRelease />
       <section id="music">
         <Music />
       </section>
