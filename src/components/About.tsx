@@ -20,9 +20,9 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-4 bg-gradient-to-r from-primary/20 to-orange-400/20 rounded-3xl blur-2xl" />
                 <img
-                  src="/images/alijoma-ayow.jpg"
+                  src="/images/Alijoma in the studio.jpg"
                   alt="Alijoma performing"
-                  className="relative w-full h-96 object-cover rounded-2xl shadow-2xl border border-border"
+                  className="relative w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-border"
                 />
               </div>
             </motion.div>

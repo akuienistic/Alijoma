@@ -26,19 +26,23 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             <span className="text-gradient">ALIJOMA</span>
           </h1>
-          <div className="mb-6 flex flex-wrap gap-2 justify-center lg:justify-start">
-            <Badge variant="secondary" className="text-primary font-medium tracking-widest uppercase px-4 py-1">
-              South Sudanese Recording Artist
-            </Badge>
-            <Badge variant="outline" className="px-3 py-1">
-              Afrobeat
-            </Badge>
-            <Badge variant="outline" className="px-3 py-1">
-              Reggae
-            </Badge>
-            <Badge variant="outline" className="px-3 py-1">
-              Dancehall
-            </Badge>
+          <div className="mb-6">
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-start mb-2">
+              <Badge variant="secondary" className="text-primary font-medium tracking-widest uppercase px-4 py-1">
+                South Sudanese Recording Artist
+              </Badge>
+            </div>
+            <div className="flex flex-wrap gap-2 justify-center lg:justify-start">
+              <Badge variant="outline" className="px-3 py-1">
+                Afrobeat
+              </Badge>
+              <Badge variant="outline" className="px-3 py-1">
+                Reggae
+              </Badge>
+              <Badge variant="outline" className="px-3 py-1">
+                Dancehall
+              </Badge>
+            </div>
           </div>
           <p className="text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
             Ignite your soul with electrifying Afrobeat grooves, laid-back Reggae vibes, and infectious Dancehall beats!
